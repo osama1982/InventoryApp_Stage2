@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+    <string name="number_of_products" translatable="true">Number of products in stock:</string>
+    <string name="products" translatable="true">Products</string>
+    <string name="delete_all_products">Delete All Products</string>
+    <string name="insert_dummy_product">Insert Dummy Product</string>
+    <string name="add_new_product">Add New Product:</string>
+    <string name="supplier_phone">Supplier Phone</string>
+    <string name="supplier_name">Supplier Name</string>
+    <string name="supplier_info">Supplier Info:</string>
+    <string name="product_quantity">Product Quantity</string>
+    <string name="product_price">Product Price</string>
+    <string name="item_info">Item Info:</string>
+    <string name="product_name">Product Name</string>
+    <string name="editor_insert_item_failed">Error With Saving Product!</string>
+    <string name="editor_insert_item_successful">Product Saved!</string>
+    <string name="deletion_failed">Deletion Failed</string>
+    <string name="sale">Sale!</string>
+    <!-- Title text for the empty view, which describes the empty boxes image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">It\'s a bit lonely here...</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a product [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a product</string>
+    <string name="all_count_rows_deleted">All %d Rows Deleted!</string>
+    <string name="editor_activity_add_new_item">Add New Item</string>
+    <string name="editor_activity_edit_item">Edit Item</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current item [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current item [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this item?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current item [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current item [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Toast message in editor when current item was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_item_successful">Item deleted</string>
+
+    <!-- Toast message in editor when current item has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_item_failed">Error with deleting item</string>
+    <string name="item_sold">Item Sold!</string>
+    <string name="item_not_sold">Item Not Sold!</string>
+    <string name="call_supplier">Call Supplier!</string>
+    <string name="quantity_less_than_zero">Quantity cannot be less than 0</string>
+    <string name="adj_factor_less_than_one">Adjustment Factor Should be at least 1</string>
+    <string name="invalid_or_empty_phone_number">Cannot call empty or invalid number!</string>
+    <string name="update_failed">Update Product Failed!</string>
+    <string name="update_successful">Update Product Successful!</string>
+    <string name="empty_product_list_image">Empty Product List Image</string>
+    <string name="exception_error">Insertion is not supported for</string>
+    <string name="empty_or_invalid">is Empty or Invalid</string>
+    <string name="unknown_uri">Unknown URI </string>
+    <string name="with_match"> with match </string>
+    <string name="insert_test_item_failed">Insert Test product Failed!</string>
+</resources>

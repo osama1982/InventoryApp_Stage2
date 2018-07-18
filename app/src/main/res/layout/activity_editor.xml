@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/edit_activity_root_ll"
+    tools:context=".EditorActivity">
+
+    <TextView
+        android:id="@+id/add_new_product_tv"
+        style="@style/add_new_product_tv"
+        android:text="@string/add_new_product" />
+
+    <LinearLayout style="@style/info_container_ll">
+
+        <TextView
+            android:id="@+id/item_info_tv"
+            style="@style/sub_info_tv"
+            android:text="@string/item_info" />
+
+        <LinearLayout style="@style/details_edit_text">
+
+            <EditText
+                android:id="@+id/product_name_et"
+                style="@style/input_edit_text"
+                android:hint="@string/product_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/product_quantity_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/product_quantity"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Change Quantity By:"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/item_margin"
+                    android:layout_marginTop="@dimen/item_margin"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/editor_quantity_button_decrease"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/adjustment_factor_et"
+                        style="@style/input_edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/editor_quantity_button_increase"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/product_price_et"
+                style="@style/input_edit_text"
+                android:hint="@string/product_price"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/supplier_container_ll">
+
+        <TextView
+            android:id="@+id/supplier_info_tv"
+            style="@style/sub_info_tv"
+            android:text="@string/supplier_info" />
+
+        <LinearLayout style="@style/details_edit_text">
+
+            <EditText
+                android:id="@+id/supplier_name_et"
+                style="@style/input_edit_text"
+                android:hint="@string/supplier_name" />
+
+            <EditText
+                android:id="@+id/supplier_phone_et"
+                style="@style/input_edit_text"
+                android:hint="@string/supplier_phone"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/call_supplier_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_supplier" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

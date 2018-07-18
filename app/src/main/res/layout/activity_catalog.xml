@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_margin"
+    tools:context=".CatalogActivity">
+
+    <ListView
+        android:id="@+id/inventory_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Empty view for the list -->
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/empty_inventory_image"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/empty_product_list_image"
+            android:src="@drawable/empty_boxes" />
+
+        <TextView
+            android:id="@+id/empty_title_text"
+            style="@style/style_empty_title_text"
+            android:text="@string/empty_view_title_text" />
+
+        <TextView
+            android:id="@+id/empty_subtitle_text"
+            style="@style/style_empty_subtitle_text"
+            android:text="@string/empty_view_subtitle_text" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/products_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_margin" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/fab_style"
+        android:src="@drawable/ic_control_point" />
+
+</RelativeLayout>
